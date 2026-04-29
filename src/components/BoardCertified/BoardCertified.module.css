@@ -1,0 +1,87 @@
+.section {
+  background-color: var(--bg-light);
+  padding: 100px 0;
+  font-family: var(--font-inter);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.badgeWrapper {
+  flex: 0 0 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.certifiedImage {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.italic {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--text-dark);
+}
+
+.gold {
+  font-family: var(--font-playfair);
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--accent-gold);
+}
+
+.desc {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: var(--accent-gold);
+  color: var(--bg-light);
+  padding: 15px 30px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--accent-gold-hover);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  
+  .badgeWrapper {
+    flex: 1;
+  }
+}

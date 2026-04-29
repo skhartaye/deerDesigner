@@ -1,0 +1,153 @@
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  font-family: var(--font-inter);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topBar {
+  background-color: var(--bg-darker);
+  border-bottom: 1px solid var(--border-light);
+  padding: 12px 0;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.iconPlaceholder {
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(179, 139, 109, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-gold);
+  transition: all 0.3s ease;
+}
+
+.iconPlaceholder svg {
+  width: 10px;
+  height: 10px;
+}
+
+.iconPlaceholder:hover {
+  background-color: var(--accent-gold);
+  color: var(--bg-darker);
+}
+
+.phone {
+  font-family: var(--font-playfair);
+  color: var(--accent-gold);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.phone span {
+  font-size: 13px;
+  color: var(--accent-gold);
+  margin-right: 8px;
+  letter-spacing: 3px;
+}
+
+.mainNav {
+  background-color: var(--bg-dark);
+  padding: 20px 0;
+  position: relative;
+}
+
+.logo {
+  color: var(--text-light);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoText span {
+  font-weight: 400;
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+}
+
+.navLinks a {
+  font-family: var(--font-playfair);
+  color: #d1cbc1;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: var(--accent-gold);
+}
+
+.ctaButton {
+  font-family: var(--font-playfair);
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  padding: 12px 28px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: var(--accent-gold);
+  color: var(--bg-dark);
+}
+
+.mobileMenuBtn {
+  display: none;
+  color: var(--text-light);
+}
+
+@media (max-width: 900px) {
+  .mobileMenuBtn {
+    display: block;
+  }
+  
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-dark);
+    padding: 20px;
+    border-top: 1px solid var(--border-light);
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .navLinksOpen {
+    display: flex;
+  }
+  
+  .cta {
+    display: none;
+  }
+}

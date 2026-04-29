@@ -1,0 +1,130 @@
+.section {
+  background-color: var(--bg-light);
+  padding: 100px 0;
+  font-family: var(--font-inter);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.content {
+  flex: 1;
+}
+
+.label {
+  font-family: var(--font-playfair);
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 35px;
+  line-height: 1.2;
+}
+
+.italic {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-dark);
+}
+
+.gold {
+  font-family: var(--font-playfair);
+  font-weight: 400;
+  color: var(--accent-gold);
+}
+
+.list {
+  font-family: var(--font-playfair);
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.list li {
+  margin-bottom: 10px;
+}
+
+.funTwist {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.formContainer {
+  flex: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 22px 25px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  font-family: var(--font-playfair);
+  font-size: 15px;
+  color: var(--text-dark);
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.input:focus {
+  border-color: var(--accent-gold);
+}
+
+.submitBtn {
+  font-family: var(--font-playfair);
+  background-color: var(--accent-gold);
+  color: var(--bg-dark);
+  padding: 22px 25px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.submitBtn:hover {
+  background-color: var(--accent-gold-hover);
+}
+
+.successMessage {
+  padding: 20px;
+  background-color: rgba(179, 139, 109, 0.1);
+  border: 1px solid var(--accent-gold);
+  border-radius: 4px;
+  color: var(--accent-gold);
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
